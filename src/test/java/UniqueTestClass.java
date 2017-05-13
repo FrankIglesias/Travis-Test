@@ -15,5 +15,5 @@ public class UniqueTestClass {
 	public void testDePruebaDeMaterias() {
 		Materia unaMat = new Materia("Algebra");
 		assertEquals(unaMat.getNombre(), "Algebra");
-	}
+	}  
 }
