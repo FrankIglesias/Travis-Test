@@ -6,6 +6,7 @@ jdk:
 after_success:
 - curl -O https://gist.githubusercontent.com/gastonprieto/aa0c2162eebd8c6d941e050f7229e9bc/raw/5390ba84568a5893d09b40e308008b67012604fb/github-coverage-report.sh
 - mvn package
+- mvn clean test jacoco:report coveralls:report
 - bash ./github-coverage-report.sh
 - bash <(curl -s https://codecov.io/bash)
 env:
